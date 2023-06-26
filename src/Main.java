@@ -16,13 +16,13 @@ public class Main {
         int option=sc.nextInt();
         switch (option)
         {
-            case 1:c.payWithDebitCard();
+            case 1:c.select("Debit Card");
             break;
-            case 2:c.payWithNetBanking();
+            case 2:c.select("NetBanking");
             break;
-            case 3:c.payWithUpi();
+            case 3:c.select("Upi");
             break;
-            case 4:c.payWithPaytm();
+            case 4:c.select("Wallet");
             break;
         }
 

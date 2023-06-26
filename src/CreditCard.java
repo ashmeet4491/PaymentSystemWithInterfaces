@@ -1,26 +1,15 @@
 public class CreditCard {
 
-    public void payWithDebitCard()
+    public void select(String paymentType)
     {
-        DebitCard d=new DebitCard();
-        d.pay();
+
+             Payment pay=PaymentProvider.PaymentPro(paymentType);//since this is static
+             pay.pay();
+
+
+
+
     }
 
-    public void payWithNetBanking()
-    {
-        NetBanking netBanking=new NetBanking();
-        netBanking.pay();
-    }
 
-    public void payWithUpi()
-    {
-        Upi upi=new Upi();
-        upi.pay();
-    }
-
-    public void payWithPaytm()
-    {
-        Paytm paytm=new Paytm();
-        paytm.pay();
-    }
 }
